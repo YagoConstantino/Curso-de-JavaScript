@@ -52,3 +52,33 @@ let contador = 1;
 for (let contador = 1; contador <= 10; contador++) {
   console.log(contador);
 }
+
+/*Transformação de variaveis
+Há determinadas funções para mudar os tipos de variaveis
+*/
+
+let num1 = "5";
+let num2 = 2;
+let num3 = "5.5";
+
+console.log(`${num1},${num2},${num3}`);
+
+console.log(typeof num1, typeof num2, typeof num3);
+
+num1 = parseInt(num1);
+num2 = parseFloat(num2);
+num3 = Number(num3);
+
+console.log(`${num1},${num2},${num3}`);
+
+console.log(typeof num1, typeof num2, typeof num3);
+
+/*Tambem podemos mudar variaveis para string usando a função String*/
+
+num3 = String(num3);
+num2 = String(5.9032);
+num1 = String("ola mundo");
+
+console.log(`${num1},${num2},${num3}`);
+
+console.log(typeof num1, typeof num2, typeof num3);
