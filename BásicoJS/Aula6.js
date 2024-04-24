@@ -44,30 +44,29 @@ str.toUpperCase(); // transforma as letras em maiuscula.
 //----------------//
 const nome = prompt("Digite o seu Nome Completo");
 
-document.body.innerHTML = `O seu Nome é ${nome} <br />`;
+document.body.innerHTML = `O seu Nome é <strong>${nome}<strong/> <br />`;
 
-document.body.innerHTML += `Seu nome tem as letras ${nome.match(
-  /[a-z]/g
-)}<br/>`;
+document.body.innerHTML += `Seu nome tem as letras <strong>${nome.length}<strong/>
+<br/>`;
 
 document.body.innerHTML += `A segunda letra do seu nome é ${nome[1]}<br/>`;
 
-document.body.innerHTML += `O primeiro índice da letra a no seu nome é ${nome.indexOf(
+document.body.innerHTML += `O primeiro índice da letra a no seu nome é <strong>${nome.indexOf(
   "a"
-)}<br/>`;
+)}<strong/><br/>`;
 
-document.body.innerHTML += `O último índice da letra a em seu nome é ${nome.lastIndexOf(
+document.body.innerHTML += `O último índice da letra a em seu nome é <strong>${nome.lastIndexOf(
   "a"
-)}<br/>`;
+)}<strong/><br/>`;
 
-document.body.innerHTML += `As últimas três letras do seu nome são ${nome.slice(
+document.body.innerHTML += `As últimas três letras do seu nome são <strong>${nome.slice(
   -3
-)}<br/>`;
+)}<strong/><br/>`;
 
-document.body.innerHTML += `As palavras separadas do seu Nome são : ${nome.split(
+document.body.innerHTML += `As palavras separadas do seu Nome são : <strong>${nome.split(
   " "
-)}<br/> `;
+)}<strong/><br/> `;
 
-document.body.innerHTML += `${nome.toUpperCase()}<br/>`;
+document.body.innerHTML += `<strong>${nome.toUpperCase()}<strong/><br/>`;
 
-document.body.innerHTML += `${nome.toLowerCase()}<br/>`;
+document.body.innerHTML += `<strong>${nome.toLowerCase()}<strong/><br/>`;
