@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 6</title>
+    <style>
+      body ol li {
+        font-family: monospace;
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Strings</h1>
+    <ol>
+      <li>
+        //Strings let str = "Um texto";
+        <br />
+        /* String funcionam como arrays de caracteres,podemos acessar os
+        caracteres por meio do indice da string*/
+        <br />
+        for (i = 0; i < 8; i++) { console.log(str[i]); }
+      </li>
+
+      <li>
+        /*\contra barras servem para chamar algumas utilidades por meio de
+        caracteres,logo o caracter seguinte da \contra barra é tratado como
+        comando, nao caracter,portanto,nao é impresso*/
+        <br />
+        let str2 = "segundo \texto";
+      </li>
+
+      <li>
+        console.log(str.indexOf("texto"), 1); // retorna o primeiro indice da
+        palavra escolhida,podemos definir o indice de começo da busca com um
+        numero apos o numero
+        <br />
+        console.log(str.lastIndexOf("o", 7)); // faz o mesmo porem começa na
+        ultima posição e vai voltando
+      </li>
+
+      <li>
+        console.log(str.match(/[a-z]/g)); //expressão regular para achar letras
+        minusculas de a - z, o g é para agrupar, senao retorna o primeiro indice
+        que achar com essa busca
+        <br />
+        console.log(str.search(/t/)); //retorna a posição do caracter escolhido
+      </li>
+
+      <li>
+        console.log(str.replace("Um", "segundo")); //replace,primeiro a palavra
+        que vai ser substituida,segundo a palavra nova.
+        <br />
+        str = str.replace("Um", "segundo"); str = str.replace(/t/g, "p"); //o
+        grupo de todos os t vao mudar para p,caso não use o g ou não use
+        expressões regulares teria que mudar um por um console.log(str);
+      </li>
+
+      <li>
+        console.log(str.length); // para saber o tamanho da string.
+        <br />
+        console.log(str.slice(2, 6)); // para corta uma string,ou seja pegar
+        apenas uma parte. o primeiro parametro é o começo e o segundo é o
+        proximo após o ultimo,logo o sexto caracter não é impresso.
+        <br />
+        console.log(str); console.log(str.slice(-5)); // ultimos 5 caracteres
+        //--------------------------------------------//
+      </li>
+
+      <li>
+        Array = str.split(" "); // retorna um array com cada palavra da string
+        dividida por espaços,poderia ser qualquer caracter.
+        <br />
+        str.toLowerCase; // transforma as letras em minuscula
+        <br />
+        str.toUpperCase; // transforma as letras em maiuscula.
+      </li>
+    </ol>
+
+    <script src="/BásicoJS/Aula6.js"></script>
+  </body>
+</html>
