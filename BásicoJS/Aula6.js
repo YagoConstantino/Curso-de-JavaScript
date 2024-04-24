@@ -44,7 +44,7 @@ str.toUpperCase(); // transforma as letras em maiuscula.
 //----------------//
 const nome = prompt("Digite o seu Nome Completo");
 
-document.body.innerHTML = `O seu Nome é <strong>${nome}<strong/> <br />`;
+document.body.innerHTML += `O seu Nome é <strong>${nome}<strong/> <br />`;
 
 document.body.innerHTML += `Seu nome tem as letras <strong>${nome.length}<strong/>
 <br/>`;
