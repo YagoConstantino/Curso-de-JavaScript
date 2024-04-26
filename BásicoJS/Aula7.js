@@ -81,3 +81,56 @@ console.log(aleatorio3);
 Math.sqrt()->  raiz quadrada
 Math.pow(base,expoente)
 há o operador ** tambem em Javascript para potencia */
+//------Exercicios-----------//
+
+let numero = 0;
+
+numero = Number(prompt("Digite um numero"));
+
+document.body.innerHTML += `<strong> Seu Numero é ${numero} <strong/> <br/>`;
+
+document.body.innerHTML += `A Raiz quadrada desse numero é ${Math.sqrt(
+  numero
+)}<br/>`;
+
+document.body.innerHTML += `${numero} é inteiro ; ${Number.isInteger(
+  numero
+)}<br/>`;
+
+document.body.innerHTML += `É Nan:${isNaN(numero)}<br/>`;
+
+document.body.innerHTML += `Arredondando para baixo : ${Math.floor(
+  numero
+)}<br/>`;
+
+document.body.innerHTML += `Arredondando para cima ${Math.ceil(numero)}<br/>`;
+
+document.body.innerHTML += `Com Duas casas decimais:${numero.toFixed(2)}<br/>`;
+//--------------------//
+
+let numero2 = 0;
+
+numero2 = Number(prompt("Digite o Segundo Numero"));
+
+/*
+document.getElementById("numero2").innerHTML = numero2;
+*/
+const numeroTitulo = document.getElementById("numero2").innerHTML;
+
+numeroTitulo.innerHTML = numero2;
+
+const texto = document.getElementById("texto");
+
+texto.innerHTML = `<p><strong> Seu Numero é ${numero2} <strong/> <p/>`;
+
+texto.innerHTML += `<p>Raiz quadrada : ${Math.sqrt(numero2)}<p/>`;
+
+texto.innerHTML += `<p>${numero2} é inteiro : ${Number.isInteger(numero2)}<p/>`;
+
+texto.innerHTML += `<p>${numero2} é NaN: ${Number.isNaN(numero2)}<p/>`;
+
+texto.innerHTML += `<p>Arredondando para baixo :${Math.floor(numero2)}<p/>`;
+
+texto.innerHTML += `<p>Arredondando para cima :${Math.ceil(numero2)}<p/>`;
+
+texto.innerHTML += `<p>Com duas casas decimais ${numero2.toFixed(2)}<p/>`;
