@@ -63,3 +63,13 @@ form button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.paragrafo-resultado{
+  background-color: #3de23d;
+  padding: 15px 20px;
+}
+
+.bad{
+  background-color: #ac2520;
+  padding: 15px 20px;
+}
