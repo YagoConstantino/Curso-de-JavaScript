@@ -139,4 +139,4 @@ switch(mes)
 
 const paragrafo = document.querySelector("#data");
 
-paragrafo.innerHTML = `${nome},${zero(diaMes)} de ${nomeMes} de ${ano} ás${zero(hora)}:${zero(minutos)}:${zero(sec)} <br/>`;
+paragrafo.innerHTML = `<strong>${nome},${zero(diaMes)} de ${nomeMes} de ${ano} ás ${zero(hora)}:${zero(minutos)}:${zero(sec)}<strong/> <br/>`;
