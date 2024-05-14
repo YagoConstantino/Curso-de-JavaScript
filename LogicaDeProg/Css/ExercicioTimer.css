@@ -74,5 +74,15 @@ button{
 }
 
 button:hover{
+  color: #ffffff;
   background-color: var(--primary-color-darker);
+}
+
+.relogio
+{
+  font-size: 3em;
+}
+
+.pausado{
+  color:red;
 }
