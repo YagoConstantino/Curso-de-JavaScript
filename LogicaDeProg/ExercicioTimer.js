@@ -76,6 +76,4 @@ document.addEventListener('click',function(evento){
             iniciaRelogio();
         }
         
-
-
 })
