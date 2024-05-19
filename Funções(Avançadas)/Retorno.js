@@ -1,5 +1,5 @@
 //Retornar valores de funções
-//O retorno nos permite armazenar o retorno em variaveis ou ainda como parametro para outras funções ou ainda em laços de repetição etc.
+//O retorno nos permite armazenar o retorno em variaveis, como parametro para outras funções ou ainda em laços de repetição etc.
 
 function soma(x,y) 
 {
@@ -85,7 +85,7 @@ console.log(duplica(2));
 console.log(triplica(2));
 console.log(quadriplica(2));
 
-//Criamos uma função que praticamente cria chama outra que pode variar os parametros
+//Criamos uma função que praticamente cria funções com  os parametros podendo variar
 function criaMultiplicador(multiplicador)
 {
     function multiplica(n)
